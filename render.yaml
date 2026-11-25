@@ -16,7 +16,7 @@ services:
       - key: CORS_ORIGINS
         value: "*"
 
-  # Frontend React Static Site (Render uses type: web with runtime: static)
+  # Frontend React Static Site
   - type: web
     name: yogaveda-frontend
     runtime: static
@@ -29,7 +29,4 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: yogaveda-backend
-          property: url
+        sync: false
