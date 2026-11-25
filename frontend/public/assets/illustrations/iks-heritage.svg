@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iks-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#244B35"/>
+      <stop offset="100%" stop-color="#183C2A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="20" fill="url(#iks-bg)"/>
+  <circle cx="300" cy="200" r="140" fill="none" stroke="#C5A059" stroke-width="2" opacity="0.4"/>
+  <circle cx="300" cy="200" r="160" fill="none" stroke="#A8B99A" stroke-width="1" stroke-dasharray="6,4" opacity="0.3"/>
+  
+  <!-- Ancient Palm-Leaf Manuscript (Talapatra) -->
+  <rect x="150" y="160" width="300" height="45" rx="6" fill="#EAE6D8" opacity="0.95"/>
+  <rect x="160" y="195" width="280" height="45" rx="6" fill="#F7F5EB"/>
+  <!-- Cord hole -->
+  <circle cx="210" cy="182" r="5" fill="#777D52"/>
+  <circle cx="210" cy="217" r="5" fill="#777D52"/>
+  <!-- Text lines (simulated Grantha / Devanagari script) -->
+  <line x1="230" y1="178" x2="420" y2="178" stroke="#244B35" stroke-width="2" stroke-dasharray="8,4,12,3"/>
+  <line x1="230" y1="187" x2="400" y2="187" stroke="#244B35" stroke-width="2" stroke-dasharray="14,3,6,4"/>
+  <line x1="230" y1="213" x2="415" y2="213" stroke="#244B35" stroke-width="2" stroke-dasharray="10,4,8,3"/>
+  <line x1="230" y1="222" x2="390" y2="222" stroke="#244B35" stroke-width="2" stroke-dasharray="12,3,15,4"/>
+
+  <!-- Brass Diya / Sacred Flame -->
+  <g transform="translate(300, 290)">
+    <path d="M -30,10 Q 0,25 30,10 Q 0,15 -30,10 Z" fill="#C5A059"/>
+    <ellipse cx="0" cy="10" rx="30" ry="6" fill="#D9D2BE"/>
+    <!-- Flame -->
+    <path d="M 0,8 C -10,-8 0,-35 0,-35 C 0,-35 10,-8 0,8 Z" fill="#FFA726"/>
+    <path d="M 0,8 C -5,-2 0,-20 0,-20 C 0,-20 5,-2 0,8 Z" fill="#FFF59D"/>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-vrikshasana" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5EB"/>
+      <stop offset="50%" stop-color="#EAE6D8"/>
+      <stop offset="100%" stop-color="#D9D2BE"/>
+    </linearGradient>
+    <linearGradient id="figure-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#244B35"/>
+      <stop offset="100%" stop-color="#183C2A"/>
+    </linearGradient>
+    <linearGradient id="cloth-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A8B99A"/>
+      <stop offset="100%" stop-color="#777D52"/>
+    </linearGradient>
+    <radialGradient id="halo-glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#A8B99A" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#EAE6D8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#183C2A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="450" fill="url(#bg-grad-vrikshasana)" rx="24"/>
+  
+  <!-- Outer Decorative Border -->
+  <rect x="18" y="18" width="564" height="414" fill="none" stroke="#A8B99A" stroke-width="1.5" stroke-dasharray="6,4" rx="16" opacity="0.6"/>
+  <rect x="24" y="24" width="552" height="402" fill="none" stroke="#244B35" stroke-width="0.75" rx="12" opacity="0.3"/>
+
+  <!-- Botanical Background Leaves -->
+  <g opacity="0.22" fill="#777D52">
+    <!-- Left foliage -->
+    <path d="M 18,220 C 50,190 70,160 85,120 C 80,150 90,190 60,230 Z"/>
+    <path d="M 30,280 C 65,260 95,240 115,200 C 105,230 110,270 70,300 Z"/>
+    <path d="M 20,130 C 50,110 80,100 110,70 C 95,95 100,130 65,150 Z"/>
+    <!-- Right foliage -->
+    <path d="M 582,220 C 550,190 530,160 515,120 C 520,150 510,190 540,230 Z"/>
+    <path d="M 570,280 C 535,260 505,240 485,200 C 495,230 490,270 530,300 Z"/>
+    <path d="M 580,130 C 550,110 520,100 490,70 C 505,95 500,130 535,150 Z"/>
+  </g>
+
+  <!-- Sacred Geometry / Halo -->
+  <circle cx="300" cy="210" r="140" fill="url(#halo-glow)"/>
+  <circle cx="300" cy="210" r="130" fill="none" stroke="#C5A059" stroke-width="1" opacity="0.35"/>
+  <circle cx="300" cy="210" r="138" fill="none" stroke="#244B35" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.4"/>
+
+  <!-- Grounding Platform / Mat -->
+  <ellipse cx="300" cy="375" rx="190" ry="18" fill="#A8B99A" opacity="0.3"/>
+  <ellipse cx="300" cy="372" rx="170" ry="12" fill="#777D52" opacity="0.2"/>
+
+  <!-- Specific Yoga Pose Anatomy -->
+  <g filter="url(#shadow)">
+    
+  <!-- Head -->
+  <circle cx="300" cy="120" r="21" fill="url(#figure-grad)"/>
+  <!-- Arms overhead in Anjali Mudra -->
+  <path d="M 285,145 Q 265,110 295,65 L 305,65 Q 335,110 315,145 Z" fill="none" stroke="url(#figure-grad)" stroke-width="12" stroke-linecap="round"/>
+  <!-- Joined Palms at top -->
+  <path d="M 296,65 C 296,50 300,45 300,45 C 300,45 304,50 304,65 Z" fill="url(#cloth-grad)"/>
+  <!-- Torso -->
+  <path d="M 287,145 L 313,145 L 310,245 L 290,245 Z" fill="url(#figure-grad)"/>
+  <path d="M 286,185 Q 300,198 314,185 L 311,245 L 289,245 Z" fill="url(#cloth-grad)" opacity="0.85"/>
+  <!-- Standing Left Leg (rooted) -->
+  <path d="M 294,245 L 306,245 L 304,366 L 293,366 Z" fill="url(#figure-grad)"/>
+  <path d="M 288,366 L 308,366 L 306,374 L 284,374 Z" fill="url(#figure-grad)"/>
+  <!-- Bent Right Leg (knee out to right side, sole pressed to inner knee/thigh) -->
+  <path d="M 308,245 Q 365,280 345,295 L 305,270 Z" fill="url(#figure-grad)"/>
+  <circle cx="355" cy="285" r="7" fill="url(#figure-grad)"/>
+
+  </g>
+
+  <!-- Sanskrit Calligraphy & Title Tag -->
+  <g transform="translate(300, 412)" text-anchor="middle">
+    <text font-family="'Cinzel', serif" font-size="13" font-weight="600" fill="#244B35" letter-spacing="3">VṚKṢĀSANA • TREE POSE</text>
+  </g>
+</svg>

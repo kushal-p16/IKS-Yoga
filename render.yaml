@@ -1,0 +1,30 @@
+services:
+  # Backend FastAPI Service
+  - type: web
+    name: yogaveda-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+      - key: DATABASE_URL
+        value: sqlite:///./yogaveda.db
+      - key: CORS_ORIGINS
+        value: "*"
+
+  # Frontend Static Site
+  - type: static
+    name: yogaveda-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    rootDir: frontend
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: yogaveda-backend
+          property: url
